@@ -42,8 +42,7 @@ pipeline {
  				curl -X POST \
  				-H 'Authorization: token $PASSWORD' \
  				'https://api.github.com/repos/$USERNAME/do400-greeting-devsecops/issues' \
- 				-d '{"title": "CI build $BUILD_NUMBER", "body": "Pipeline
- 				build $BUILD_NUMBER has failed"}'
+ 				-d '{"title": "CI build $BUILD_NUMBER", "body": "Pipeline build $BUILD_NUMBER has failed"}'
  			"""
  		}
  	}
